@@ -3,153 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GamesFullZ — Premium PC Games</title>
+    <title>GamesFullZ — Descarga Juegos PC Full Premium</title>
 
-    <meta name="description" content="Descarga juegos gratis y seguros para PC. Catálogo UI Premium, ultra rápido.">
-    <meta name="theme-color" content="#030308">
+    <meta name="description" content="Descarga los mejores juegos para PC gratis y seguros. Catálogo premium con enlaces rápidos de Mediafire y Gofile. Sin publicidad intrusiva.">
+    <meta name="keywords" content="juegos pc, descargar juegos, juegos gratis, pc games, gamesfullz, mediafire, gofile">
+    <meta name="theme-color" content="#020204">
     
-    <!-- Preload fonts to avoid flash -->
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GamesFullZ — Premium PC Games">
+    <meta property="og:description" content="La mejor biblioteca de juegos para PC con interfaz premium y descargas seguras.">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rajdhani:wght@500;600;700;800&display=swap" rel="stylesheet" />
     
-    <!-- Font Awesome -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background Ambient Glow -->
+    <!-- Background Effects -->
     <div class="ambient-glow"></div>
     <div class="ambient-glow purple"></div>
 
-    <!-- Header Premium -->
+    <!-- Header -->
     <header class="header">
         <div class="header-inner container">
-            <a href="#" class="logo">
-                GAMESFULL<span class="neon-text">Z</span>
+            <a href="/" class="logo">
+                GAMESFULL<span>Z</span>
             </a>
             
             <div class="search-box">
                 <i class="fas fa-search search-icon"></i>
-                <input type="text" id="searchInput" placeholder="Search games...">
+                <input type="text" id="searchInput" placeholder="Buscar juegos en la galaxia...">
             </div>
             
             <a href="https://web.telegram.org/k/#-4959297719" target="_blank" class="btn-primary">
-                <i class="fab fa-telegram-plane"></i> Únete
+                <i class="fab fa-telegram-plane"></i> TELEGRAM
             </a>
         </div>
     </header>
 
     <main class="container">
-        <!-- Dashboard / Filters -->
+        <!-- Filters & Sorting -->
         <div class="filters-dashboard">
             <div class="categories" id="filterBar">
-                <button class="cat-btn active" data-filter="todos">ALL</button>
-                <button class="cat-btn" data-filter="accion">ACTION</button>
-                <button class="cat-btn" data-filter="aventura">ADVENTURE</button>
-                <button class="cat-btn" data-filter="terror">HORROR</button>
+                <button class="cat-btn active" data-filter="todos">TODOS</button>
+                <button class="cat-btn" data-filter="accion">ACCION</button>
+                <button class="cat-btn" data-filter="aventura">AVENTURA</button>
+                <button class="cat-btn" data-filter="terror">TERROR</button>
                 <button class="cat-btn" data-filter="rpg">RPG</button>
                 <button class="cat-btn" data-filter="supervivencia">SURVIVAL</button>
-                <button class="cat-btn" data-filter="lucha">FIGHTING</button>
-                <button class="cat-btn" data-filter="carreras">RACING</button>
+                <button class="cat-btn" data-filter="lucha">LUCHA</button>
+                <button class="cat-btn" data-filter="carreras">CARRERAS</button>
             </div>
             
             <div class="sort-control">
                 <select id="sortSelect">
-                    <option value="default">Sort: Newest</option>
-                    <option value="name-asc">Sort: A-Z</option>
-                    <option value="downloads">Sort: Trending</option>
+                    <option value="default">Novedades</option>
+                    <option value="name-asc">Nombre (A-Z)</option>
+                    <option value="downloads">Más Populares</option>
                 </select>
             </div>
         </div>
 
-        <!-- High Performance Gallery -->
+        <!-- Catalog Grid -->
         <section class="gallery" id="gallery">
-            <!-- Renders via JS -->
+            <!-- Rendered by script.js -->
+            <div class="empty-gallery">Cargando biblioteca estelar...</div>
         </section>
         
-        <!-- Pagination -->
+        <!-- Pagination UI -->
         <div class="pagination-ui">
             <button id="prevPage" class="nav-arrow" disabled><i class="fas fa-chevron-left"></i></button>
-            <div id="pageNumbersContainer" class="page-numbers-track"></div>
+            <div id="pageNumbersContainer"></div>
             <button id="nextPage" class="nav-arrow"><i class="fas fa-chevron-right"></i></button>
         </div>
 
-        <!-- How To Install Guide -->
+        <!-- Guide Section -->
         <section class="info-section">
-            <h2 class="section-title">INSTALLATION <span class="neon-text">GUIDE</span></h2>
+            <h2 class="section-title">GUÍA DE <span style="color: var(--neon-red)">INSTALACIÓN</span></h2>
             <div class="guide-grid">
                 <div class="guide-card reveal-up">
                     <div class="guide-icon"><i class="fas fa-download"></i></div>
-                    <h3>01. Download</h3>
-                    <p>Choose your preferred server directly from our catalog.</p>
+                    <h3>01. Descargar</h3>
+                    <p>Elige el servidor de tu preferencia (Mediafire o Gofile) en la ficha del juego.</p>
                 </div>
-                <div class="guide-card reveal-up" style="transition-delay: 0.1s;">
-                    <div class="guide-icon"><i class="fas fa-lock-open"></i></div>
-                    <h3>02. Extract</h3>
-                    <p>Use the global password <strong class="neon-text highlight">123</strong> to unlock the rar files.</p>
+                <div class="guide-card reveal-up">
+                    <div class="guide-icon"><i class="fas fa-file-archive"></i></div>
+                    <h3>02. Extraer</h3>
+                    <p>Usa la contraseña global <strong style="color: var(--neon-red)">123</strong> para descomprimir los archivos .rar.</p>
                 </div>
-                <div class="guide-card reveal-up" style="transition-delay: 0.2s;">
-                    <div class="guide-icon"><i class="fas fa-gamepad"></i></div>
-                    <h3>03. Play</h3>
-                    <p>Run the executable and enjoy a premium virus-free experience.</p>
+                <div class="guide-card reveal-up">
+                    <div class="guide-icon"><i class="fas fa-play"></i></div>
+                    <h3>03. Disfrutar</h3>
+                    <p>Ejecuta el .exe como administrador y sumérgete en la acción sin límites.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Recomendados y Status -->
+        <!-- Status & Contact -->
         <div class="bottom-modules">
             <section class="system-status reveal-up">
                 <div class="status-header">
                     <div class="pulse-dot"></div>
-                    <h3>SYSTEM SECURE</h3>
+                    <h3>SISTEMA ONLINE</h3>
                 </div>
-                <p>No registration needed. 100% daily scanned files.</p>
+                <p>Archivos verificados diariamente. Descargas 100% seguras y libres de virus.</p>
             </section>
             
-            <section class="contact-box reveal-up" style="transition-delay: 0.2s;">
-                <h3>REQUEST A GAME</h3>
+            <section class="contact-box reveal-up">
+                <h3>SOLICITAR UN JUEGO</h3>
                 <form action="https://formspree.io/f/mpwlozqz" method="POST" class="minimal-form">
-                    <input type="email" name="Correo" placeholder="you@email.com" required>
-                    <input type="text" name="Mensaje" placeholder="Game Name..." required>
-                    <button type="submit" class="btn-primary">SEND</button>
+                    <input type="email" name="Email" placeholder="Tu correo..." required>
+                    <input type="text" name="Juego" placeholder="Nombre del juego..." required>
+                    <button type="submit" class="btn-primary">ENVIAR</button>
                 </form>
             </section>
         </div>
     </main>
 
-    <!-- Modal Premium -->
+    <!-- Global Layout Modal -->
     <div id="gameModal" class="modal-premium">
         <div class="modal-backdrop"></div>
         <div class="modal-panel">
-            <button class="modal-close" id="closeDetails"><i class="fas fa-times"></i></button>
-            <div class="modal-hero">
-                <img id="modalImage" src="" alt="">
-                <div class="modal-hero-gradient"></div>
-            </div>
-            <div class="modal-content">
-                <h2 id="modalTitle" class="modal-title"></h2>
-                
-                <div class="modal-stats">
-                    <div class="stat-badge"><i class="fas fa-star"></i> <span id="modalRating"></span></div>
-                    <div class="stat-badge cyan"><i class="fas fa-download"></i> <span id="modalDownloads"></span> DLs</div>
-                </div>
-                
-                <p id="modalInfo" class="modal-desc"></p>
-                
-                <div class="req-box" id="modalRequirements"></div>
-                
-                <div class="download-zone">
-                    <h4>AVAILABLE SERVERS</h4>
-                    <div class="download-buttons">
-                        <a href="#" id="linkMediafire" target="_blank" class="dl-btn mediafire"><i class="fas fa-cloud-download-alt"></i> MEDIAFIRE</a>
-                        <a href="#" id="linkGofile" target="_blank" class="dl-btn gofile"><i class="fas fa-hdd"></i> GOFILE</a>
-                    </div>
-                </div>
-                
-                <div class="extra-zone" id="extraDownloads" style="display:none;"></div>
-            </div>
+            <!-- Content Injected Dynamic by script.js -->
         </div>
     </div>
 

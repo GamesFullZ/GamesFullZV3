@@ -1,4 +1,4 @@
-// script.js V4 — Master UI Logic (Galaxy & Glass)
+// script.js V5 — Premium Static Engine (Red / Dark Edition)
 document.addEventListener('DOMContentLoaded', () => {
     // 1. DOM Elements
     const gallery = document.getElementById('gallery');
@@ -9,29 +9,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnPrev = document.getElementById('prevPage');
     const btnNext = document.getElementById('nextPage');
     
-    // Modal Structure (Re-initialized each click)
+    // Modal Elements
     const modal = document.getElementById('gameModal');
     const modalInner = modal.querySelector('.modal-panel');
     const backdrop = modal.querySelector('.modal-backdrop');
 
-    // 2. Data & State
+    // 2. Data Validation
     if (typeof recursos === 'undefined' || !Array.isArray(recursos)) {
-        gallery.innerHTML = '<h3 class="empty-gallery">Fatal Error: data.js is missing.</h3>';
+        gallery.innerHTML = '<div class="empty-gallery">Error Crítico: data.js no encontrado.</div>';
         return;
     }
     
+    // State
     let activeData = recursos.filter(g => g.tipo === 'juego');
     const perPage = 12;
     let currPage = 1;
 
+    // Advanced Category Mapping
     const catKeywords = {
-        accion: ['acción', 'shooter', 'fps', 'hack and slash', 'combate', 'guerra'],
-        aventura: ['aventura', 'mundo abierto', 'historia', 'exploración'],
-        terror: ['terror', 'horror', 'zombi', 'silent hill', 'miedo', 'fnaf'],
-        rpg: ['rpg', 'rol', 'souls', 'elden ring'],
-        supervivencia: ['supervivencia', 'survival', 'craft'],
-        lucha: ['lucha', 'pelea', 'mortal kombat', 'capcom', 'fighter'],
-        carreras: ['carrera', 'racing', 'forza', 'auto']
+        accion: ['acción', 'action', 'shooter', 'fps', 'combate', 'guerra', 'cod', 'call of duty'],
+        aventura: ['aventura', 'adventure', 'mundo abierto', 'open world', 'historia', 'exploración'],
+        terror: ['terror', 'horror', 'zombi', 'miedo', 'fnaf', 'resident evil', 'bendy', 'quarry'],
+        rpg: ['rpg', 'rol', 'souls', 'elden ring', 'deltarune', 'undertale', 'cyberpunk'],
+        supervivencia: ['supervivencia', 'survival', 'craft', 'forest'],
+        lucha: ['lucha', 'pelea', 'fighter', 'mortal kombat', 'naruto'],
+        carreras: ['carrera', 'racing', 'forza', 'motor', 'auto', 'blur']
     };
 
     function determineCat(g) {
@@ -43,34 +45,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // 3. Scroll Reveal Observer
-    const revealOptions = { root: null, rootMargin: '0px 0px -50px 0px', threshold: 0.1 };
-    const revealObserver = new IntersectionObserver((entries, obs) => {
+    const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
-                obs.unobserve(entry.target); 
             }
         });
-    }, revealOptions);
+    }, { threshold: 0.15 });
 
-    document.querySelectorAll('.reveal-up').forEach(el => revealObserver.observe(el));
-
-    // 4. Core Render 
+    // 4. Core Engine 
     function runEngine() {
         const term = searchInput.value.toLowerCase().trim();
-        const cat = document.querySelector('.cat-btn.active').dataset.filter;
+        const activeBtn = document.querySelector('.cat-btn.active');
+        const cat = activeBtn ? activeBtn.dataset.filter : 'todos';
         const sort = sortSelect.value;
         
         activeData = recursos.filter(g => {
             if (g.tipo !== 'juego') return false;
-            const mTerm = !term || g.nombre.toLowerCase().includes(term) || g.descripcion.toLowerCase().includes(term);
-            const mCat = (cat === 'todos') ? true : determineCat(g) === cat;
-            return mTerm && mCat;
+            const matchesTerm = !term || g.nombre.toLowerCase().includes(term) || g.descripcion.toLowerCase().includes(term);
+            const matchesCat = (cat === 'todos') ? true : determineCat(g) === cat;
+            return matchesTerm && matchesCat;
         });
 
-        if (sort === 'name-asc') activeData.sort((a,b) => a.nombre.localeCompare(b.nombre));
-        else if (sort === 'downloads') activeData.sort((a,b) => (b.downloads||0) - (a.downloads||0));
-        else activeData.sort((a,b) => (b.id||0) - (a.id||0)); 
+        // Sorting Logic
+        if (sort === 'name-asc') {
+            activeData.sort((a,b) => a.nombre.localeCompare(b.nombre));
+        } else if (sort === 'downloads') {
+            activeData.sort((a,b) => (b.downloads || 0) - (a.downloads || 0));
+        } else {
+            activeData.sort((a,b) => (b.id || 0) - (a.id || 0)); 
+        }
 
         currPage = 1;
         renderGallery();
@@ -80,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderGallery() {
         gallery.innerHTML = '';
         if (activeData.length === 0) {
-            gallery.innerHTML = '<div class="empty-gallery">Zero matches found in the Galaxy.</div>';
+            gallery.innerHTML = '<div class="empty-gallery">No se encontraron juegos en esta galaxia.</div>';
             return;
         }
 
@@ -94,12 +98,12 @@ document.addEventListener('DOMContentLoaded', () => {
             card.dataset.id = g.id;
             
             card.innerHTML = `
-                <img src="${g.imagen}" alt="${g.nombre}" class="game-cover" loading="lazy" decoding="async">
+                <img src="${g.imagen}" alt="${g.nombre}" class="game-cover" loading="lazy">
                 <div class="game-overlay">
                     <h3 class="game-title">${g.nombre}</h3>
                     <div class="game-meta">
-                        <span>⭐ ${g.rating || '4.0'}</span>
-                        <span><i class="fas fa-download"></i> ${g.downloads || 0}</span>
+                        <span><i class="fas fa-star"></i> ${g.rating ? g.rating.length : '4'}</span>
+                        <span><i class="fas fa-download"></i> ${(g.downloads || 0).toLocaleString()}</span>
                     </div>
                 </div>
             `;
@@ -127,26 +131,30 @@ document.addEventListener('DOMContentLoaded', () => {
             const btn = document.createElement('button');
             btn.className = `page-num ${i === currPage ? 'active' : ''}`;
             btn.textContent = i;
-            btn.onclick = () => { currPage = i; renderGallery(); renderPagination(); document.getElementById('gallery').scrollIntoView({behavior:'smooth', block:'start'});};
+            btn.onclick = () => { 
+                currPage = i; 
+                renderGallery(); 
+                renderPagination(); 
+                window.scrollTo({ top: gallery.offsetTop - 100, behavior: 'smooth' });
+            };
             pContainer.appendChild(btn);
         }
     }
 
-    // 5. MASTER MODAL LOGIC + STAGGERED HTML INJECTION
+    // 5. Modal Logic
     function openModal(id) {
         const game = recursos.find(g => g.id == id);
         if(!game) return;
 
         const extrasHtml = game.extra ? `
             <div class="extra-zone slide-stagger st-4">
-                ${game.extra.vocesLatinas ? `<a href="${game.extra.vocesLatinas}" target="_blank" class="dl-btn-extra"><i class="fas fa-microphone-alt"></i> LATAM Audio</a>` : ''}
-                ${game.extra.onlineFix ? `<a href="${game.extra.onlineFix}" target="_blank" class="dl-btn-extra"><i class="fas fa-globe"></i> Online Fix</a>` : ''}
+                ${game.extra.vocesLatinas ? `<a href="${game.extra.vocesLatinas}" target="_blank" class="dl-btn-extra"><i class="fas fa-microphone-alt"></i> Voces LATAM</a>` : ''}
+                ${game.extra.onlineFix ? `<a href="${game.extra.onlineFix}" target="_blank" class="dl-btn-extra"><i class="fas fa-globe"></i> Fix Online</a>` : ''}
             </div>
         ` : '';
 
-        // Construir panel interior dinámico para forzar re-animación (staggering)
         modalInner.innerHTML = `
-            <button class="modal-close" id="closeDetailsBtn"><i class="fas fa-times"></i></button>
+            <button class="modal-close" id="closeDetail"><i class="fas fa-times"></i></button>
             <div class="modal-hero">
                 <img src="${game.imagen}" alt="${game.nombre}">
                 <div class="modal-hero-gradient"></div>
@@ -155,17 +163,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h2 class="modal-title slide-stagger st-1">${game.nombre}</h2>
                 
                 <div class="modal-badges slide-stagger st-1">
-                    <div class="sys-badge"><i class="fas fa-star cl-star"></i> ${game.rating || '4.0'} / 5</div>
-                    <div class="sys-badge"><i class="fas fa-download cl-cyan"></i> ${(game.downloads||0).toLocaleString()} DLs</div>
-                    <div class="sys-badge"><i class="fas fa-gamepad cl-purple"></i> ${determineCat(game).toUpperCase()}</div>
+                    <div class="sys-badge"><i class="fas fa-star"></i> ${game.rating || '⭐⭐⭐⭐⭐'}</div>
+                    <div class="sys-badge"><i class="fas fa-download"></i> ${(game.downloads||0).toLocaleString()} DLs</div>
+                    <div class="sys-badge"><i class="fas fa-gamepad"></i> ${determineCat(game).toUpperCase()}</div>
                 </div>
                 
                 <p class="modal-desc slide-stagger st-2">${game.descripcion}</p>
                 
-                <div class="req-box slide-stagger st-2"><strong>SYSTEM REQ:</strong> ${game.requisitos || "Specs unavailable."}</div>
+                <div class="req-box slide-stagger st-2">
+                    <strong>REQUISITOS DEL SISTEMA:</strong><br>
+                    ${game.requisitos || "Información de hardware no disponible para este título."}
+                </div>
                 
                 <div class="download-zone slide-stagger st-3">
-                    <h4>Select Secure Server</h4>
+                    <h4>DESCARGA SEGURA</h4>
                     <div class="download-buttons">
                         <a href="${game.links?.mediafire || '#'}" target="_blank" class="master-dl-btn mediafire">
                             <i class="fas fa-cloud-download-alt"></i> MEDIAFIRE
@@ -180,10 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
-        // Re-attach close event listener to the freshly injected button
-        document.getElementById('closeDetailsBtn').addEventListener('click', closeModal);
-
-        // Show Modal and Block Body Scroll
+        document.getElementById('closeDetail').onclick = closeModal;
         modal.classList.add('is-open');
         document.body.style.overflow = 'hidden'; 
     }
@@ -193,19 +201,19 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = ''; 
     }
 
-    // 6. Events Binding
+    // 6. Event Bindings
     filterBtns.forEach(btn => btn.addEventListener('click', (e) => {
         filterBtns.forEach(b => b.classList.remove('active'));
-        e.target.classList.add('active');
+        btn.classList.add('active');
         runEngine();
     }));
 
     sortSelect.addEventListener('change', runEngine);
     
-    let tOut;
+    let searchDebounce;
     searchInput.addEventListener('input', () => {
-        clearTimeout(tOut);
-        tOut = setTimeout(runEngine, 300);
+        clearTimeout(searchDebounce);
+        searchDebounce = setTimeout(runEngine, 300);
     });
 
     btnPrev.addEventListener('click', () => { if(currPage > 1) { currPage--; renderGallery(); renderPagination(); }});
@@ -216,9 +224,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (card) openModal(card.dataset.id);
     });
 
-    backdrop.addEventListener('click', closeModal);
-    document.addEventListener('keydown', (e) => { if(e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
+    backdrop.onclick = closeModal;
+    document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeModal(); });
 
-    // Boot
+    // Initial Boot
     runEngine();
 });
+
