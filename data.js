@@ -1445,7 +1445,7 @@ const recursos = [
             mediafire: "https://www.mediafire.com/file/4gtwlrjya53y2wl/Call.of.Duty.Modern.Warfare.III.v10.4.torrent/file",
         },
         extra: {
-            vocesLatinas: "https://www.mediafire.com/file    _premium/69suagbuy6fbgn3/CDMW3-LnggPck-LTM.rar/file",
+            vocesLatinas: "https://www.mediafire.com/file_premium/69suagbuy6fbgn3/CDMW3-LnggPck-LTM.rar/file",
         },
         imagen: "Images/warfareIII.jpg",
     },
@@ -2005,5 +2005,6 @@ const recursos = [
         direct: "https://icutlink.com/pygb5v0p",
         mediafire: "https://icutlink.com/pygb5v0p"
     },
-    imagen: "Images/alice_madness_returns.webp",
+    imagen: "Images/alice_madness_returns.webp"
+  }
 ];
