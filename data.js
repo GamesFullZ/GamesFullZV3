@@ -1989,4 +1989,22 @@ const recursos = [
         },
         imagen: "Images/co400s.webp",
     },
+    {
+    id: 115,
+    nombre: "Alice: Madness Returns",
+    tipo: "juego",
+    descripcion: "Juego de acción y aventura en tercera persona con estética oscura y retorcida basado en Alicia en el País de las Maravillas, donde Alice lucha contra sus traumas mentales mientras explora mundos surrealistas llenos de enemigos grotescos y puzzles",
+    requisitos: "Windows XP / Vista / 7, Intel Core 2 Duo 2.0 GHz / AMD Athlon X2 5200+, 2 GB RAM, GeForce 8600 GT / Radeon HD 3850, 8 GB espacio",
+    downloads: 0,
+    rating: "⭐⭐⭐⭐⭐",
+    comments: [
+        "pinche juego bonito pero te deja traumado",
+        "arte god, historia más oscura que tu historial"
+    ],
+    links: {
+        direct: "https://icutlink.com/pygb5v0p",
+        mediafire: "https://icutlink.com/pygb5v0p"
+    },
+    imagen: "Images/alice_madness_returns.webp",
+    },
 ];
