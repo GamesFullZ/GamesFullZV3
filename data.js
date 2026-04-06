@@ -2006,5 +2006,4 @@ const recursos = [
         mediafire: "https://icutlink.com/pygb5v0p"
     },
     imagen: "Images/alice_madness_returns.webp",
-    },
 ];
