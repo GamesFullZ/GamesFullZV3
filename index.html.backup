@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamesFullZ - Descarga Juegos Gratis</title>
+    
+    <!-- Fuentes modernas -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos con Font Awesome -->
+    <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css  ">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5795479991735761"
+     crossorigin="anonymous"></script>
+         <!-- Google AdSense AMP -->
+    <script async custom-element="amp-auto-ads"
+        src="  https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js  ">
+</script>
+    
+    <!-- Enlace al CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Estilos para el bloqueador de AdBlock (eliminados junto con su contenido) -->
+    <!-- Nota: Los estilos .adblock-* han sido removidos por completo -->
+</head>
+<body data-theme="dark" id="top">
+    
+    <!-- Banner superior -->
+    <div class="banner-top" style="text-align:center; margin: 10px 0;">
+        <a href="http://icutlink.com/ref/Jesus09xd">
+            <img src="https://icutlink.com/img/banner728.gif  " alt="Publicidad">
+        </a>
+    </div>
+    
+    <!-- Pantalla de bienvenida animada -->
+    <div id="welcomeScreen" class="welcome-screen">
+        <div class="welcome-content">
+            <div class="logo-animation">
+                <span class="logo-letter">G</span>
+                <span class="logo-letter">a</span>
+                <span class="logo-letter">m</span>
+                <span class="logo-letter">e</span>
+                <span class="logo-letter">s</span>
+                <span class="logo-letter">F</span>
+                <span class="logo-letter">u</span>
+                <span class="logo-letter">l</span>
+                <span class="logo-letter">l</span>
+                <span class="logo-letter">Z</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabecera fija -->
+    <header id="mainHeader" class="site-header">
+        <div class="container header-content">
+            <!-- Logo que ahora recarga la página con animación -->
+            <a href="/" class="logo" id="logoLink">
+                <span class="logo-text">Games<span>FullZ</span></span>
+                <span class="logo-loader"></span>
+            </a>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Buscar juegos...">
+            </div>
+            
+            <div class="header-actions">
+                <!-- Botón hacia el grupo de Telegram -->
+                <a href="https://web.telegram.org/k/#-4959297719" target="_blank" rel="noopener noreferrer" class="boton-telegram">
+                    <i class="fab fa-telegram-plane"></i> Telegram
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <!-- Sección de juegos -->
+        <section id="games-section" class="content-section active">
+            <!-- Galería de juegos -->
+            <div class="gallery__container" id="gallery">
+                <!-- Los juegos se cargarán dinámicamente -->
+            </div>
+            
+            <!-- Paginación con navegación directa -->
+            <div class="pagination-container">
+                <button id="prevPage" class="pagination-btn" disabled>
+                    <i class="fas fa-chevron-left"></i> Anterior
+                </button>
+                
+                <div class="page-navigation">
+                    <span id="pageInfo" class="page-info">Página 1 de 1</span>
+                    <div class="page-numbers" id="pageNumbersContainer">
+                        <!-- Los números de página se generarán dinámicamente -->
+                    </div>
+                </div>
+                
+                <button id="nextPage" class="pagination-btn">
+                    Siguiente <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Sección de guía rápida -->
+        <section class="guide-section">
+            <h2>Guía Rápida de Descarga</h2>
+            <div class="guide-steps">
+                <div class="guide-step">
+                    <i class="fas fa-search"></i>
+                    <h3>1. Busca</h3>
+                    <p>Encuentra el juego que deseas en nuestro catálogo</p>
+                </div>
+                <div class="guide-step">
+                    <i class="fas fa-download"></i>
+                    <h3>2. Descarga</h3>
+                    <p>Haz clic en el juego y elige tu servidor preferido</p>
+                </div>
+                <div class="guide-step">
+                    <i class="fas fa-file-archive"></i>
+                    <h3>3. Extrae o usa un cliente torrent para instalarlo</h3>
+                    <p>Usa la contraseña <strong>123</strong> para descomprimir</p>
+                </div>
+                <div class="guide-step">
+                    <i class="fas fa-play"></i>
+                    <h3>4. Juega</h3>
+                    <p>Ejecuta el instalador O Ejecuta directamente el juego y depues disfruta del juego</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de juegos recomendados -->
+        <section class="recommended-section">
+            <h2>Juegos Recomendados</h2>
+            <p class="recommended-description">Selección semanal de los mejores títulos</p>
+            <div class="recommended-games">
+                <div class="recommended-game">
+                    <i class="fas fa-crown"></i>
+                    <span>Forza Horizon 2</span>
+                </div>
+                <div class="recommended-game">
+                    <i class="fas fa-fire"></i>
+                    <span>Red Dead Redemption 2</span>
+                </div>
+                <div class="recommended-game">
+                    <i class="fas fa-star"></i>
+                    <span>Marvel's Spider-Man 2</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section class="contact-section">
+            <h2>¿Necesitas ayuda?</h2>
+            <p>Contáctanos si tienes problemas con una descarga o reportar un error.</p>
+            <form action="  https://formspree.io/f/mpwlozqz  " method="POST">
+                <div class="form-group">
+                    <label for="email">Tu Correo</label>
+                    <input type="email" name="Correo" id="email" placeholder="tu@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="Mensaje" id="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+                <button type="submit">Enviar mensaje ✉️</button>
+            </form>
+        </section>
+
+        <!-- Nota de agradecimiento -->
+        <div class="thank-you">
+            <p>🎮 ¡Gracias por apoyar la web, amigo! La Contraseña ES 123🎮</p>
+        </div>     
+    </main>
+
+    <!-- Modal de detalles del juego -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeDetails">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Portada del juego">
+                <div class="modal-info">
+                    <h2 id="modalTitle">Título del juego</h2>
+                    <div class="rating-downloads">
+                        <div class="rating" id="modalRating">⭐⭐⭐⭐☆</div>
+                        <div class="downloads" id="modalDownloads">Descargado por +5,300 usuarios</div>
+                    </div>
+                    <p id="modalInfo">Descripción del juego.</p>
+                    <div class="requirements">
+                        <h3>Requisitos mínimos</h3>
+                        <p id="modalRequirements">Procesador: ...</p>
+                    </div>
+                    <div class="download-options">
+                        <h3>Descargar desde:</h3>
+                        <div class="links">
+                            <a href="#" id="linkGofile" target="_blank" class="download-link gofile">
+                                <i class="fas fa-cloud"></i> Gofile
+                            </a>
+                            <a href="#" id="linkMediafire" target="_blank" class="download-link mediafire">
+                                <i class="fas fa-file-download"></i> Mediafire
+                            </a>
+                        </div>
+                    </div>
+<!-- Contenedor de extras opcionales -->
+<div class="download-options extra-downloads" id="extraDownloads" style="display:none;">
+    <h3>Extras disponibles:</h3>
+    <div class="links-extra">
+        <!-- Aquí se inyectarán los links de Voces Latinas, Online Fix o Updates desde JS -->
+    </div>
+    <!-- Contenedor de nota del juego -->
+    <div class="game-note" id="gameNote" style="display:none; margin-top: 10px; padding: 10px; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px;">
+        <p class="note-text" style="margin:0; color:#856404; font-weight:bold;"></p>
+    </div>
+</div>
+
+<!-- Sección de comentarios -->
+<div class="comments-section">
+    <h3>Reseñas de usuarios</h3>
+    <div id="commentsContainer" class="comments-list"></div>
+    <div class="add-comment">
+        <textarea placeholder="Escribe tu opinión..." rows="3" id="commentInput"></textarea>
+        <button id="addCommentBtn">Publicar</button>
+    </div>
+</div>
+    <!-- Modal de vista previa al pasar el cursor -->
+    <div id="previewModal" class="preview-modal">
+        <div class="preview-content">
+            <img id="previewImage" src="" alt="Vista previa del juego">
+            <div class="preview-info">
+                <h3 id="previewTitle"></h3>
+                <div class="preview-meta">
+                    <span class="preview-rating" id="previewRating"></span>
+                    <span class="preview-downloads" id="previewDownloads"></span>
+                </div>
+                <p id="previewDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón volver arriba -->
+    <button id="backToTop" class="back-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Botones de navegación adicionales -->
+    <div class="navigation-buttons">
+        <a href="#about" class="nav-btn about-btn">
+            <i class="fas fa-info-circle"></i> Sobre Nosotros
+        </a>
+        <a href="#faq" class="nav-btn faq-btn">
+            <i class="fas fa-question-circle"></i> FAQ
+        </a>
+        <a href="#privacy" class="nav-btn privacy-btn">
+            <i class="fas fa-lock"></i> Privacidad
+        </a>
+    </div>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="about" class="content-section about-section">
+        <div class="about-content">
+            <h2>Sobre GamesFullZ</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>GamesFullZ es un proyecto personal creado por un joven apasionado de los videojuegos. Mi objetivo es compartir juegos de calidad de forma gratuita y segura con la comunidad gamer.</p>
+                    <p>Desde 2020, he estado recopilando y verificando juegos para ofrecer una experiencia de descarga confiable. Cada juego es escaneado cuidadosamente antes de ser publicado.</p>
+                    <p>Este es un sitio independiente sin fines de lucro. Si tienes alguna sugerencia o encuentras un problema, no dudes en contactarme. ¡Tu feedback ayuda a mejorar la comunidad!</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <i class="fas fa-gamepad"></i>
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Juegos</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Usuarios</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-download"></i>
+                        <span class="stat-number">2M+</span>
+                        <span class="stat-label">Descargas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección FAQ -->
+    <section id="faq" class="content-section faq-section">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Cómo descargo un juego?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Para descargar un juego, simplemente haz clic en la tarjeta del juego que te interesa. En la ventana emergente, encontrarás los enlaces de descarga. Haz clic en uno de los enlaces y sigue las instrucciones en el sitio externo.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Son seguros los juegos?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, todos nuestros juegos son escaneados regularmente con múltiples antivirus y verificados antes de ser publicados. Además, utilizamos solo servicios de descarga confiables como Mediafire y Gofile.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Por qué necesito una contraseña para extraer los archivos?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>La contraseña es una medida de seguridad para evitar que los antivirus marquen los archivos como maliciosos. La contraseña para todos nuestros juegos es: <strong>123</strong></p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Puedo solicitar un juego específico?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>¡Por supuesto! Puedes solicitarnos juegos a través de nuestro formulario de contacto o directamente en nuestro grupo de Telegram O Mi Cuenta De Tiktok. Hago mi mejor esfuerzo para agregar los títulos más solicitados.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Qué hago si un enlace no funciona?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Si un enlace no funciona, por favor contáctanos a través de nuestro formulario de contacto o en Telegram. Me encargaré de resolver el problema lo antes posible.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Por qué algunos juegos van lentos?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Algunos juegos son ports de consolas y pueden presentar problemas de rendimiento. Siempre indico en la descripción si un juego es un port para que estés informado antes de descargar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Política de Privacidad -->
+    <section id="privacy" class="content-section privacy-section">
+        <div class="privacy-content">
+            <h2>Política de Privacidad</h2>
+            <div class="privacy-text">
+                <p>En GamesFullZ, respeto tu privacidad y me comprometo a proteger tus datos personales. Esta política de privacidad explica cómo recopilo, uso y protejo tu información.</p>
+                <h3>Protección de datos</h3>
+                <p>Implemento medidas de seguridad técnicas para proteger tu información contra acceso no autorizado, alteración, divulgación o destrucción.</p>
+                
+                <h3>Enlaces a terceros</h3>
+                <p>Nuestro sitio puede contener enlaces a sitios de terceros. No soy responsable por las prácticas de privacidad de estos sitios y te recomiendo revisar sus políticas de privacidad.</p>
+                
+                <h3>Cambios en esta política</h3>
+                <p>Me reservo el derecho de actualizar esta política de privacidad en cualquier momento. Te notificaré sobre cambios importantes a través de nuestro sitio web.</p>
+                
+                <p>Si tienes alguna pregunta sobre nuestra política de privacidad, no dudes en contactarnos a través de nuestro formulario de contacto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de seguridad -->
+    <section class="security-section">
+        <h2>Compromiso con tu Seguridad</h2>
+        <div class="security-features">
+            <div class="security-feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Escaneo Diario</h3>
+                <p>Todos los archivos son verificados con antivirus</p>
+            </div>
+            <div class="security-feature">
+                <i class="fas fa-link"></i>
+                <h3>Enlaces Seguros</h3>
+                <p>Usamos solo servicios de descarga confiables</p>
+            </div>
+            <div class="security-feature">
+                <i class="fas fa-user-shield"></i>
+                <h3>Sin Datos Personales</h3>
+                <p>No requerimos registro ni datos sensibles</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="/" class="logo">Games<span>FullZ</span></a>
+                <p class="footer-description">Descargas gratuitas y seguras de juegos</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">Sobre Nosotros</a>
+                <a href="#faq">FAQ</a>
+                <a href="#privacy">Privacidad</a>
+                <a href="#games-section">Juegos</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GamesFullZ. Proyecto independiente creado por un apasionado de los videojuegos.</p>
+        </div>
+    </footer>
+
+    <!-- Botón para volver al inicio -->
+    <a href="#top" class="back-to-top-mobile">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Carga de datos y scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Script para la animación del logo -->
+    <script>
+        document.getElementById('logoLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Añadir clase de animación al logo
+            this.classList.add('logo-clicked');
+            
+            // Recargar la página después de la animación
+            setTimeout(function() {
+                window.location.href = '/';
+            }, 600);
+        });
+    </script>
+</body>
+</html>
