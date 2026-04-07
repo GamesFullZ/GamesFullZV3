@@ -2007,7 +2007,7 @@ const recursos = [
     },
     imagen: "Images/alice_madness_returns.webp"
   },
-    {
+  {
     id: 117,
     nombre: "DOOM Eternal",
     tipo: "juego",
@@ -2024,4 +2024,5 @@ const recursos = [
         mediafire: "https://icutlink.com/6aall8onwb"
     },
     imagen: "Images/doom_eternal.webp",
+    },
 ];
