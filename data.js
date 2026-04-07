@@ -1894,8 +1894,8 @@ const recursos = [
             "buen juego indie"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/d6smqcbgjwti7gu/Terraria+GAMESFULLZ.torrent/file",
-            mediafire: "https://cuty.io/2iEOxk59Yxd"
+            direct: "https://icutlink.com/jg3wciaugpwyj",
+            mediafire: "https://icutlink.com/jg3wciaugpwyj"
         },
         imagen: "Images/anybody-know-where-i-can-find-the-cover-art-without-the-v0-dxdo7wt3eiy91.webp",
     },
@@ -1912,8 +1912,8 @@ const recursos = [
             "casi me cago en las carreras"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/jrrni1rg1e4jnim/F1+2014+GAMESFULLZ.torrent/file",
-            mediafire: "https://cuty.io/4mQcL8"
+            direct: "https://icutlink.com/bdbgqfeu",
+            mediafire: "https://icutlink.com/bdbgqfeu"
         },
         imagen: "Images/co2q4a.jpg",
     },
@@ -1930,8 +1930,8 @@ const recursos = [
             "es mejor el pes 2013"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/n2521wj65xsupsj/FIFA+14+V2.1.torrent/file",
-            mediafire: "https://cuty.io/AOTY4PPxMH"
+            direct: "https://icutlink.com/k4y3q7vyv6q2",
+            mediafire: "https://icutlink.com/k4y3q7vyv6q2"
         },
         imagen: "Images/FIFA_14.jpeg",
     },
@@ -1948,8 +1948,8 @@ const recursos = [
             "juegazo"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/rttju079lm1afes/Hades.II.v0.125553-Repack.torrent/file",
-            mediafire: "https://cuty.io/wBd9q"
+            direct: "https://icutlink.com/wyhlsvxzf",
+            mediafire: "https://icutlink.com/wyhlsvxzf"
         },
         imagen: "Images/hades-ii-wclv5.png",
     },
@@ -1966,8 +1966,8 @@ const recursos = [
             "juegazo del heilo xdd"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/v6oorzq1e3g4bzh/Halo+2+V2.torrent/file",
-            mediafire: "https://cuty.io/rix3dp"
+            direct: "https://icutlink.com/rthto2eqppvg",
+            mediafire: "https://icutlink.com/rthto2eqppvg"
         },
         imagen: "Images/Halo2-cover.png",
     },
