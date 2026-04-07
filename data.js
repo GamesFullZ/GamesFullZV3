@@ -1699,8 +1699,8 @@ const recursos = [
             "Gran diseño artístico y combates desafiantes"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/4f81nlnucwrgito/Blasphemous.2.Mea.Culpa-RUNE.torrent/file",
-            mediafire: "https://www.mediafire.com/file/4f81nlnucwrgito/Blasphemous.2.Mea.Culpa-RUNE.torrent/file"
+            direct: "https://icutlink.com/2bsungv",
+            mediafire: "https://icutlink.com/2bsungv"
         },
         imagen: "Images/EGS_Blasphemous2_TheGameKitchen.jpg",
     },
@@ -1717,8 +1717,8 @@ const recursos = [
             "El online puede mejorar pero sigue siendo muy bueno"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/72hrtcbuiijbz1a/Street.Fighter.V.v07.011.torrent/file",
-            mediafire: "https://www.mediafire.com/file/72hrtcbuiijbz1a/Street.Fighter.V.v07.011.torrent/file"
+            direct: "https://icutlink.com/1tzrr4tj2",
+            mediafire: "https://icutlink.com/1tzrr4tj2"
         },
         extra: {
         },
@@ -1737,8 +1737,8 @@ const recursos = [
             "El modo online funciona muy bien"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/bsudfzck80gh86z/Capcom.Fighting.Collection.2.v1.0.0.3-P2P.torrent/file",
-            mediafire: "https://www.mediafire.com/file/bsudfzck80gh86z/Capcom.Fighting.Collection.2.v1.0.0.3-P2P.torrent/file"
+            direct: "https://icutlink.com/dewidsmp501",
+            mediafire: "https://icutlink.com/dewidsmp501"
         },
         extra: {
             onlineFix: "https://www.mediafire.com/file/s9183zh8jwny7cv/CapcFCollection2FixOnly(1).rar/file"
@@ -1759,8 +1759,8 @@ const recursos = [
             "Funciona perfecto en online"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/n3gocvgxsor5zci/MARVEL.vs.CAPCOM.Fighting.Collection.Arcade.Classics.v1.0.0.4.torrent/file",
-            mediafire: "https://www.mediafire.com/file/n3gocvgxsor5zci/MARVEL.vs.CAPCOM.Fighting.Collection.Arcade.Classics.v1.0.0.4.torrent/file"
+            direct: "https://icutlink.com/tfowdy2iw2scm",
+            mediafire: "https://icutlink.com/tfowdy2iw2scm"
         },
         extra: {
             onlineFix: "https://www.mediafire.com/file/dw1d4ho8k6txh29/MvsCFCAC_FixOnly.rar/file"
@@ -1781,8 +1781,8 @@ const recursos = [
             "Muy nostálgico y desafiante aún hoy."
         ],
         links: {
-            direct: "https://www.mediafire.com/file/pk8tsiljpvwo2hs/Far+cry+1+y+2.torrent/file",
-            mediafire: "https://www.mediafire.com/file/pk8tsiljpvwo2hs/Far+cry+1+y+2.torrent/file"
+            direct: "https://icutlink.com/7xum0y8v1b1a",
+            mediafire: "https://icutlink.com/7xum0y8v1b1a"
         },
         imagen: "Images/COVER.jpg",
     },
@@ -1799,8 +1799,8 @@ const recursos = [
             "Difícil al inicio pero muy adictivo."
         ],
         links: {
-            direct: "https://www.mediafire.com/file/sbzwrtl0kt4tzg3/Subsistence.v03.02.2024.torrent/file",
-            mediafire: "https://www.mediafire.com/file/sbzwrtl0kt4tzg3/Subsistence.v03.02.2024.torrent/file"
+            direct: "https://icutlink.com/nvt5s5da3wr",
+            mediafire: "https://icutlink.com/nvt5s5da3wr"
         },
         extra: {
             updates: "https://gamesfullz.github.io",
@@ -1822,8 +1822,8 @@ const recursos = [
             "Me encanta"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/tskvbgrnta3zdxb/Silent+Hill+2+-+Remake+[FitGirl+Repack].torrent/file",
-            mediafire: "https://cuty.io/M8Ff7EDe2"
+            direct: "https://icutlink.com/googcjlz4x4h",
+            mediafire: "https://icutlink.com/googcjlz4x4h"
         },
         imagen: "Images/silent-hill-2-remake_ktez.1200.jpg",
     },
@@ -1840,8 +1840,8 @@ const recursos = [
             "nuevesito de paquete"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/7r0l5us73qdim0z/Hollow+Knight+Silksong+V3.torrent/file",
-            mediafire: "https://cuty.io/RrBVYM6eR3"
+            direct: "https://icutlink.com/vbedrlsvz4oov5s",
+            mediafire: "https://icutlink.com/vbedrlsvz4oov5s"
         },
         imagen: "Images/hollow_knight_silksong_game_cover_cfd0d790af.webp",
     },
@@ -1858,8 +1858,8 @@ const recursos = [
             "da miedo cuando estamos solo"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/clnpnwn8vxiagnz/Garry's+Mod.torrent/file",
-            mediafire: "https://cuty.io/2tGMvsq96"
+            direct: "https://icutlink.com/trbnecasdc",
+            mediafire: "https://icutlink.com/trbnecasdc"
         },
         imagen: "Images/8964943.jpg",
     },
@@ -1876,8 +1876,8 @@ const recursos = [
             "joya"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/hpjdz43mxgq40ry/Cuphead+GAMESFULLZ.torrent/file",
-            mediafire: "https://cuty.io/mA4QyxtPe"
+            direct: "https://icutlink.com/tzpdhhkce",
+            mediafire: "https://icutlink.com/tzpdhhkce"
         },
         imagen: "Images/MV5BN2I1ZTBiOTctZDc5MC00YjdkLWI3ZjUtNjI5Y2EzMjM2NGViXkEyXkFqcGc@._V1_.jpg",
     },
