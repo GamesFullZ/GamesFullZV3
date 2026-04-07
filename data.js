@@ -2006,5 +2006,22 @@ const recursos = [
         mediafire: "https://icutlink.com/pygb5v0p"
     },
     imagen: "Images/alice_madness_returns.webp"
-  }
+  },
+    {
+    id: 117,
+    nombre: "DOOM Eternal",
+    tipo: "juego",
+    descripcion: "Shooter en primera persona frenético donde tomas el control del Doom Slayer para destruir hordas de demonios con combate rápido, agresivo y estratégico, combinando armas, habilidades y movilidad en escenarios infernales",
+    requisitos: "Windows 7/10 64-bit, Intel Core i5-2500K / AMD Ryzen 3 1200, 8 GB RAM, GeForce GTX 970 / Radeon R9 290, 50 GB espacio",
+    downloads: 0,
+    rating: "⭐⭐⭐⭐⭐",
+    comments: [
+        "no es jugar, es ejecutar demonios profesionalmente",
+        "si no te mueves te mueres, así de simple"
+    ],
+    links: {
+        direct: "https://icutlink.com/6aall8onwb",
+        mediafire: "https://icutlink.com/6aall8onwb"
+    },
+    imagen: "Images/doom_eternal.webp",
 ];
