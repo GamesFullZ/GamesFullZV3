@@ -1984,8 +1984,8 @@ const recursos = [
             "un poco raro eh"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/hdoxzvgxwlbuo2z/Furry+Love+GAMESFULLZ.torrent/file",
-            mediafire: "https://cuty.io/FyFer"
+            direct: "https://icutlink.com/gxhfrte",
+            mediafire: "https://icutlink.com/gxhfrte"
         },
         imagen: "Images/co400s.webp",
     },
