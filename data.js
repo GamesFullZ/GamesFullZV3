@@ -1645,8 +1645,8 @@ const recursos = [
             "Gran variedad de personajes"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/oy61z98vyazieqk/NARUTO.SHIPPUDEN.Ultimate.Ninja.STORM.Revolution.torrent/file",
-            mediafire: "https://www.mediafire.com/file/oy61z98vyazieqk/NARUTO.SHIPPUDEN.Ultimate.Ninja.STORM.Revolution.torrent/file"
+            direct: "https://icutlink.com/ika2dlps3fyla",
+            mediafire: "https://icutlink.com/ika2dlps3fyla"
         },
         imagen: "Images/naruto.jpg",
     },
@@ -1663,8 +1663,8 @@ const recursos = [
             "Buen remaster con Graphic Black"
         ],
         links: {
-            direct: "https://www.mediafire.com/file/2mzr3ytsmbbxhub/The.Walking.Dead.The.Telltale.Definitive.Series.v5952618.torrent/file",
-            mediafire: "https://www.mediafire.com/file/2mzr3ytsmbbxhub/The.Walking.Dead.The.Telltale.Definitive.Series.v5952618.torrent/file"
+            direct: "https://icutlink.com/uooniytrjh0m",
+            mediafire: "https://icutlink.com/uooniytrjh0m"
         },
         imagen: "Images/TWDTTDS.jpg",
     },
