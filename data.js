@@ -2024,5 +2024,5 @@ const recursos = [
         mediafire: "https://icutlink.com/6aall8onwb"
     },
     imagen: "Images/doom_eternal.webp",
-    },
+     }
 ];
