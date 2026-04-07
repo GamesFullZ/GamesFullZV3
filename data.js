@@ -2024,5 +2024,23 @@ const recursos = [
         mediafire: "https://icutlink.com/6aall8onwb"
     },
     imagen: "Images/doom_eternal.webp",
-     }
+    },
+    {
+    id: 118,
+    nombre: "FIFA 18",
+    tipo: "juego",
+    descripcion: "Simulador de fútbol desarrollado por EA Sports que ofrece una experiencia realista con licencias oficiales, modos como Ultimate Team, Carrera y El Camino con Alex Hunter, además de mejoras en animaciones y jugabilidad",
+    requisitos: "Windows 7/8.1/10 64-bit, Intel Core i3-2100 / AMD Phenom II X4 965, 8 GB RAM, GeForce GTX 460 / Radeon R7 260, 50 GB espacio",
+    downloads: 0,
+    rating: "⭐⭐⭐⭐⭐",
+    comments: [
+        "el modo carrera se vuelve tu segunda vida",
+        "cuando pierdes dices lag, cuando ganas eres pro"
+    ],
+    links: {
+        direct: "https://icutlink.com/ojieavlow",
+        mediafire: "https://icutlink.com/ojieavlow"
+    },
+    imagen: "Images/fifa18.webp",
+     } 
 ];
