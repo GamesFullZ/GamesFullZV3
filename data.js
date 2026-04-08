@@ -2042,5 +2042,23 @@ const recursos = [
         mediafire: "https://icutlink.com/ojieavlow"
     },
     imagen: "Images/fifa18.webp",
-     } 
+    },
+    {
+    id: 119,
+    nombre: "Total War: ROME REMASTERED",
+    tipo: "juego",
+    descripcion: "Juego de estrategia que combina gestión por turnos y batallas en tiempo real ambientado en la antigua Roma, donde lideras imperios, conquistas territorios y participas en guerras masivas con mejoras visuales en 4K y sistemas modernizados",
+    requisitos: "Windows 10 64-bit, Intel Core i3 / AMD FX-4000, 6 GB RAM, GeForce GTX 600 / Radeon HD 7000, 45 GB espacio",
+    downloads: 0,
+    rating: "⭐⭐⭐⭐⭐",
+    comments: [
+        "te crees estratega hasta que te rodean por todos lados",
+        "no es difícil… hasta que pierdes media roma en un turno"
+    ],
+    links: {
+        direct: "https://icutlink.com/3qujvskpkodl",
+        mediafire: "https://icutlink.com/3qujvskpkodl"
+    },
+    imagen: "Images/rome_remastered.webp",
+    }
 ];
