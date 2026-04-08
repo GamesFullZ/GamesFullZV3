@@ -2060,5 +2060,5 @@ const recursos = [
         mediafire: "https://icutlink.com/3qujvskpkodl"
     },
     imagen: "Images/rome_remastered.webp",
-    }
+     },
 ];
